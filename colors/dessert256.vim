@@ -3,15 +3,13 @@
 
 " Xterm 256 colors: https://jonasjacek.github.io/colors/
 
-hi clear
-
+let g:colors_name = expand('<sfile>:t:r')
 set background=dark
+hi clear
 
 if exists("syntax_on")
   syntax reset
 endif
-
-let g:colors_name = "dessert256"
 
 " Syntax
 hi Comment       ctermfg=250  ctermbg=NONE cterm=NONE

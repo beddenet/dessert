@@ -1,15 +1,13 @@
 " Vim color file
 " Version:	2011/10/16 23:27
 
-hi clear
-
+let g:colors_name = expand('<sfile>:t:r')
 set background=dark
+hi clear
 
 if exists("syntax_on")
   syntax reset
 endif
-
-let g:colors_name = "dessert"
 
 " Syntax
 hi Comment       guifg=grey       guibg=NONE     gui=NONE
