@@ -10,6 +10,10 @@ if exists("syntax_on")
 endif
 
 " GUI Syntax
+hi Comment       guifg=grey       guibg=NONE     gui=NONE
+hi String        guifg=hotpink    guibg=NONE     gui=NONE
+hi Constant      guifg=khaki      guibg=NONE     gui=NONE
+hi Character     guifg=red        guibg=NONE     gui=NONE
 hi Number        guifg=magenta    guibg=NONE     gui=NONE
 hi Float         guifg=magenta    guibg=NONE     gui=NONE
 hi Identifier    guifg=green      guibg=NONE     gui=NONE
@@ -65,8 +69,9 @@ hi Title         guifg=#DC143C  guibg=NONE     gui=NONE
 hi Visual        guifg=NONE     guibg=#333333  gui=NONE
 hi WarningMsg    guifg=#ff6666  guibg=NONE     gui=NONE
 hi WildMenu      guifg=#000000  guibg=#99ccff  gui=NONE
-hi Error         guifg=NONE     guibg=NONE     gui=undercurl  guisp=#ff6666
+hi Error         guifg=NONE     guibg=NONE     gui=undercurl guisp=#ff6666
 hi Todo          guifg=#ffff00  guibg=NONE     gui=underline
+hi SignColumn    guifg=white    guibg=black
 
 " CUI Syntax
 hi Comment       ctermfg=250  ctermbg=NONE cterm=NONE
@@ -90,6 +95,7 @@ hi Cursor        ctermfg=236  ctermbg=13   cterm=NONE
 hi CursorIM      ctermfg=15   ctermbg=10   cterm=NONE
 hi CursorColumn  ctermfg=NONE ctermbg=234  cterm=NONE
 hi CursorLine    ctermfg=NONE ctermbg=238  cterm=NONE
+hi CursorLineNr  ctermfg=214  ctermbg=0    cterm=NONE
 hi Directory     ctermfg=214  ctermbg=NONE cterm=NONE
 hi DiffAdd       ctermfg=NONE ctermbg=5    cterm=NONE
 hi DiffChange    ctermfg=NONE ctermbg=238  cterm=NONE
@@ -101,6 +107,7 @@ hi Folded        ctermfg=220  ctermbg=236  cterm=NONE
 hi FoldColumn    ctermfg=220  ctermbg=233  cterm=NONE
 hi SignColumn    ctermfg=220  ctermbg=233  cterm=NONE
 hi IncSearch     ctermfg=0    ctermbg=208  cterm=NONE
+hi LineNr        ctermfg=240  ctermbg=0    cterm=NONE
 hi MatchParen    ctermfg=15   ctermbg=165  cterm=bold
 hi ModeMsg       ctermfg=214  ctermbg=NONE cterm=NONE
 hi MoreMsg       ctermfg=0    ctermbg=117  cterm=NONE
@@ -128,3 +135,4 @@ hi WarningMsg    ctermfg=206  ctermbg=NONE cterm=NONE
 hi WildMenu      ctermfg=0    ctermbg=117  cterm=NONE
 hi Error         ctermfg=NONE ctermbg=NONE cterm=undercurl
 hi Todo          ctermfg=11   ctermbg=NONE cterm=underline
+hi SignColumn    ctermfg=15   ctermbg=0    cterm=NONE
