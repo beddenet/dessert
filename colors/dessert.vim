@@ -1,5 +1,5 @@
 " Vim color file
-" Version:	2011/10/16 23:27
+" Version: 2011/10/16 23:27
 
 let g:colors_name = expand('<sfile>:t:r')
 set background=dark
@@ -9,11 +9,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-" Syntax
-hi Comment       guifg=grey       guibg=NONE     gui=NONE
-hi String        guifg=hotpink    guibg=NONE     gui=NONE
-hi Constant      guifg=khaki      guibg=NONE     gui=NONE
-hi Character     guifg=red        guibg=NONE     gui=NONE
+" GUI Syntax
 hi Number        guifg=magenta    guibg=NONE     gui=NONE
 hi Float         guifg=magenta    guibg=NONE     gui=NONE
 hi Identifier    guifg=green      guibg=NONE     gui=NONE
@@ -24,7 +20,7 @@ hi Special       guifg=purple     guibg=NONE     gui=NONE
 hi Underlined    guifg=NONE       guibg=NONE     gui=underline
 hi Boolean       guifg=chocolate  guibg=NONE     gui=NONE
 
-" General
+" GUI General
 hi ColorColumn   guifg=NONE     guibg=#111111  gui=NONE
 hi Conceal       guifg=#cccccc  guibg=#444444  gui=NONE
 hi Cursor        guifg=#333333  guibg=#ffffff  gui=NONE
@@ -67,11 +63,68 @@ hi TabLineFill   guifg=#666666  guibg=#222222  gui=underline
 hi TabLineSel    guifg=#99ccff  guibg=#000000  gui=NONE
 hi Title         guifg=#DC143C  guibg=NONE     gui=NONE
 hi Visual        guifg=NONE     guibg=#333333  gui=NONE
-
-" hi VisualNOS
 hi WarningMsg    guifg=#ff6666  guibg=NONE     gui=NONE
 hi WildMenu      guifg=#000000  guibg=#99ccff  gui=NONE
-
-" hi Ignore
 hi Error         guifg=NONE     guibg=NONE     gui=undercurl  guisp=#ff6666
 hi Todo          guifg=#ffff00  guibg=NONE     gui=underline
+
+" CUI Syntax
+hi Comment       ctermfg=250  ctermbg=NONE cterm=NONE
+hi String        ctermfg=205  ctermbg=NONE cterm=NONE
+hi Constant      ctermfg=222  ctermbg=NONE cterm=NONE
+hi Character     ctermfg=9    ctermbg=NONE cterm=NONE
+hi Number        ctermfg=13   ctermbg=NONE cterm=NONE
+hi Float         ctermfg=13   ctermbg=NONE cterm=NONE
+hi Identifier    ctermfg=2    ctermbg=NONE cterm=NONE
+hi Statement     ctermfg=214  ctermbg=NONE cterm=bold
+hi PreProc       ctermfg=160  ctermbg=NONE cterm=bold
+hi Type          ctermfg=220  ctermbg=NONE cterm=bold
+hi Special       ctermfg=5    ctermbg=NONE cterm=NONE
+hi Underlined    ctermfg=NONE ctermbg=NONE cterm=underline
+hi Boolean       ctermfg=166  ctermbg=NONE cterm=NONE
+
+" CUI General
+hi ColorColumn   ctermfg=NONE ctermbg=204  cterm=NONE
+hi Conceal       ctermfg=7    ctermbg=8    cterm=NONE
+hi Cursor        ctermfg=236  ctermbg=13   cterm=NONE
+hi CursorIM      ctermfg=15   ctermbg=10   cterm=NONE
+hi CursorColumn  ctermfg=NONE ctermbg=234  cterm=NONE
+hi CursorLine    ctermfg=NONE ctermbg=238  cterm=NONE
+hi Directory     ctermfg=214  ctermbg=NONE cterm=NONE
+hi DiffAdd       ctermfg=NONE ctermbg=5    cterm=NONE
+hi DiffChange    ctermfg=NONE ctermbg=238  cterm=NONE
+hi DiffDelete    ctermfg=235  ctermbg=237  cterm=NONE
+hi DiffText      ctermfg=NONE ctermbg=88   cterm=NONE
+hi ErrorMsg      ctermfg=15   ctermbg=165  cterm=NONE
+hi VertSplit     ctermfg=241  ctermbg=235  cterm=NONE
+hi Folded        ctermfg=220  ctermbg=236  cterm=NONE
+hi FoldColumn    ctermfg=220  ctermbg=233  cterm=NONE
+hi SignColumn    ctermfg=220  ctermbg=233  cterm=NONE
+hi IncSearch     ctermfg=0    ctermbg=208  cterm=NONE
+hi MatchParen    ctermfg=15   ctermbg=165  cterm=bold
+hi ModeMsg       ctermfg=214  ctermbg=NONE cterm=NONE
+hi MoreMsg       ctermfg=0    ctermbg=117  cterm=NONE
+hi NonText       ctermfg=241  ctermbg=NONE cterm=NONE
+hi Normal        ctermfg=15   ctermbg=234  cterm=NONE
+hi Pmenu         ctermfg=254  ctermbg=238  cterm=NONE
+hi PmenuSel      ctermfg=0    ctermbg=117  cterm=NONE
+hi PmenuSbar     ctermfg=0    ctermbg=241  cterm=NONE
+hi PmenuThumb    ctermfg=0    ctermbg=7    cterm=NONE
+hi Question      ctermfg=117  ctermbg=NONE cterm=NONE
+hi Search        ctermfg=0    ctermbg=11   cterm=NONE
+hi SpecialKey    ctermfg=241  ctermbg=NONE cterm=NONE
+hi SpellBad      ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellCap      ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellLocal    ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellRare     ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi StatusLine    ctermfg=15   ctermbg=233  cterm=NONE
+hi StatusLineNC  ctermfg=247  ctermbg=233  cterm=NONE
+hi TabLine       ctermfg=241  ctermbg=235  cterm=underline
+hi TabLineFill   ctermfg=241  ctermbg=235  cterm=underline
+hi TabLineSel    ctermfg=117  ctermbg=0    cterm=NONE
+hi Title         ctermfg=198  ctermbg=NONE cterm=NONE
+hi Visual        ctermfg=NONE ctermbg=238  cterm=NONE
+hi WarningMsg    ctermfg=206  ctermbg=NONE cterm=NONE
+hi WildMenu      ctermfg=0    ctermbg=117  cterm=NONE
+hi Error         ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi Todo          ctermfg=11   ctermbg=NONE cterm=underline
